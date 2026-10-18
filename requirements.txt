@@ -1,0 +1,4 @@
+python-telegram-bot>=21.10,<23
+demucs==4.0.1
+# demucs 4.0.1 needs torch/torchaudio < 2.1, which are built against NumPy 1.x
+numpy<2
