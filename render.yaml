@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: noise-remover-bot
+    runtime: docker
+    # htdemucs on CPU needs roughly 2 GB RAM or more; free (512 MB) will run out of memory.
+    plan: standard
+    healthCheckPath: /health
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
